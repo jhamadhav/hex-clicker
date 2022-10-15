@@ -1,27 +1,33 @@
 .leaderboard {
     position: absolute;
     right: 10px;
-    bottom: 90px;
+    bottom: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     width: 40%;
     max-width: 260px;
-    height: auto;
+    max-height: 60%;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
     transition: 500ms;
-    max-height: 60%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
 
     .lh1 {
-        width: 100%;
+        width: inherit;
         font-size: x-large;
         padding: 8px 0;
-        border-bottom: 1px solid #fff;
         text-align: center;
         margin-bottom: 10px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        border: 1px solid #fff;
+        background: #222a33;
     }
 
     .leaderboard-data {
