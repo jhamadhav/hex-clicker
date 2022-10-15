@@ -1,0 +1,18 @@
+#count-btn{
+    font-size: large;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.leaderboard{
+    display: flex;
+    flex-direction: column;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+}
+.block div{
+    padding: 4px 10px;
+}

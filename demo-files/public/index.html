@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hex Clicker</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <!-- script and style file made by us -->
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <p id="user-details">your details...</p>
+  <p id="clicks">Total clicks: 0</p>
+  <button id="sign-in">sign in</button>
+  <button id="sign-out">sign out</button>
+  <br><br>
+
+  <button id="count-btn">
+    <span id="count-value">0</span>
+  </button>
+  <p>Click to increase count !</p>
+
+  <button id="get-board">Get leaderboard</button>
+  <div class="leaderboard">
+    <div class="block">
+      <div class="name">Username</div>
+      <div class="score">Total clicks</div>
+    </div>
+    <div id="leaderboard-data">
+
+    </div>
+  </div>
+</body>
+
+</html>
