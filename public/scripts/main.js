@@ -2,6 +2,10 @@ let num = 0;
 
 window.onload = () => {
     let hexBtnHolder = document.getElementsByClassName("btn-holder");
+    document.getElementById("leaderboard-btn").onclick = () => {
+        let leaderboard = document.getElementsByClassName("leaderboard")[0]
+        leaderboard.style.display = (leaderboard.style.display == "none") ? "flex" : "none"
+    }
     hexBtnHolder[0].onclick = () => {
         num++;
         increasePoint(num);
