@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Manifest.json  -->
+  <meta property="og:title" content="Hex Clicker | Firebase">
+  <meta property="og:description" content="Simple Clicker game to demonstrate firebase features">
+  <meta property="og:image" itemprop="image" content="./media/hex-logo.png">
+  <meta property="og:url" content="https://hex-clicker-28.web.app">
+
+  <!-- Main Link Tags  -->
+  <link href="./media/hex-logo.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="./media/hex-logo.png" rel="icon" type="image/png" sizes="32x32">
+
+  <title>Hex Clicker | Firebase</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <!-- script, styles and fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.min.css">
+  <script src="./scripts/main.js"></script>
+
+</head>
+
+<body>
+  <div class="github-holder">
+    <a href="https://github.com/jhamadhav/hex-clicker" target="_blank">
+      <img src="./media/github-logo.png" alt="github repo">
+    </a>
+  </div>
+  <a href="https://hex-clicker-28.web.app">
+    <div id="heading">
+      <img src="./media/hex-logo.png" alt="Hex logo">
+      <h1>Hex Clicker</h1>
+    </div>
+  </a>
+
+  <div id="container">
+    <div class="text">
+      <p id="hi">Hi there,</p>
+      <div id="user-name">
+        Friend
+      </div>
+    </div>
+    <div class="btn-holder">
+      <div id="point">0</div>
+      <svg id="btn" width="130" height="140" viewBox="0 0 130 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M58.7652 2.40767C62.6505 0.284129 67.3495 0.284131 71.2348 2.40767L123.187 30.8024C127.358 33.0821 129.952 37.4564 129.952 42.2098V97.7902C129.952 102.544 127.358 106.918 123.187 109.198L71.2348 137.592C67.3495 139.716 62.6505 139.716 58.7652 137.592L6.81331 109.198C2.64234 106.918 0.0480957 102.544 0.0480957 97.7902V42.2098C0.0480957 37.4564 2.64234 33.0821 6.81332 30.8024L58.7652 2.40767Z"
+          fill="#DD2244" />
+      </svg>
+    </div>
+    <h2>click to count</h2>
+
+
+  </div>
+
+  <div class="btns">
+    <div class="sign" id="sign-in">
+      <img src="./media/google-icon.png" alt="google logo">
+      <div>Sign in</div>
+    </div>
+    <div class="sign" id="sign-out">
+      <img src="./media/google-icon.png" alt="google logo">
+      <div>Sign out</div>
+    </div>
+    <div class="sign" id="leaderboard-btn">
+      <img src="./media/podium.png" alt="google logo">
+      <div>Leaderboard</div>
+    </div>
+  </div>
+
+  <div class="leaderboard">
+    <div class="lh1">
+      Leaderboard
+    </div>
+    <div class="block">
+      <div class="user-name">You</div>
+      <div class="clicks" id="totalclicks">0</div>
+    </div>
+    <div class="leaderboard-data">
+
+    </div>
+  </div>
+
+</body>
+
+</html>
