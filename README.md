@@ -29,6 +29,12 @@ and all this serverless.
 ## Demo
 Check out this [dev.to blog](https://dev.to/jhamadhav/firebase-bootcamp-hex-clicker-1nk3) to know complete guide for this bootcamp.
 
+### Project Summary
+- Users can click on a button to increase click count.
+- Users can login via google to sign-in and store their game data
+- Click count will contribute to the total click count in the Database.
+- Users can access leaderboard to see others total click count.
+
 This repo contains code for both the bare bone demo project mentioned [here](https://dev.to/jhamadhav/firebase-bootcamp-hex-clicker-1nk3), as well as improved one (with better UI and graphics)
 
 ## Project links
