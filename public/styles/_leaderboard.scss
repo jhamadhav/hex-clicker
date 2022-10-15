@@ -2,7 +2,7 @@
     position: absolute;
     right: 10px;
     bottom: 80px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -60,4 +60,8 @@
     .clicks {
         padding-right: 10px;
     }
+}
+
+.leaderboard {
+    display: none;
 }
