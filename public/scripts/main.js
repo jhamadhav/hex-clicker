@@ -50,12 +50,17 @@ window.onload = () => {
         totalClicks = dbData["clicks"] || 0
         document.getElementById("totalclicks").innerText = totalClicks
         generateLeaderboard()
-    })
 
+        firebase.firestore().collection("game").doc(userDetails["email"]).onSnapshot((doc) => {
+            let tempData = doc.data()
+            document.getElementById("totalclicks").innerText = tempData["clicks"]
+        })
+    })
 
     document.getElementsByClassName("btn-holder")[0].onclick = () => {
         increaseCount()
     }
+
 }
 
 const createPlusOneAnimation = () => {
@@ -92,7 +97,6 @@ const increaseCount = () => {
     }
 
     totalClicks++
-    document.getElementById("totalclicks").innerText = totalClicks
 }
 
 const googleSignIn = () => {
